@@ -25,6 +25,5 @@ export default function MyHome() {
 
     </section>
     </div>
-   
-  )
+  );
 }
