@@ -40,3 +40,118 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+/* START FROM HERE */
+
+
+nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: #000000;
+ color: white;
+ text-align: center;
+ padding: 15px 0;
+ font-size: 1.5rem;
+ /* font-weight: bold; */
+ box-shadow: 0px 4px 10px rgba(99, 50, 50, 0.2);
+ z-index: 1000;
+ opacity: 0.7;
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ font-size: 16px;
+ transition: color 0.3s;
+}
+
+nav a:hover {
+ color: #d3a50e;
+ font-size: 16.1px;
+}
+
+
+
+@media (max-width: 480px) {
+  nav {
+    gap: 15;
+    padding: 5;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 44);
+  }
+
+  nav a {
+   font-size: 13px;
+   padding: 5px;
+  }
+
+  nav a:hover {
+    color: #d3a50e;
+    font-size: 13.2px;
+  }
+} 
+
+/* Tablets: 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  nav {
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgb(32, 32, 44);
+  }
+
+  nav a {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  nav a:hover {
+    color: #f1c40f;
+    font-size: 15.2px;
+  }
+}
+
+/* Laptops: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    gap: 20px;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: rgb(32, 32, 44);
+  }
+
+  nav a {
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    color: #e67e22;
+    font-size: 17.2px;
+  }
+}
+
+/* Desktops: 1025px and above */
+@media (min-width: 1025px) {
+  nav {
+    gap: 10px;
+    justify-content:safe ;
+    /* background-color: rgb(32, 32, 44); */
+  }
+
+  nav a {
+    font-size: 17px;
+    padding: 12px;
+  }
+
+  nav a:hover {
+    color: #ffcc00;
+    font-size: 17.5px;
+    text-shadow: #ededed;
+  }
+}

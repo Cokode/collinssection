@@ -166,3 +166,48 @@ a.secondary {
     filter: invert();
   }
 }
+
+
+/* begings here */
+
+.secWrapper {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #ccc; */
+  padding: 20px;
+}
+
+.name {
+  font-size:xx-large;
+  /* color: #ac2a2a; */
+}
+
+
+.section {
+  margin-top: 2em;
+  width: "100%";
+  background-color: #193754;
+  height: "auto";
+  display:flex;
+  flex-wrap: wrap;
+  /* padding: 5em; */
+  border-width: 5px;
+ border-radius: 2em;
+}
+
+.Image {
+  border-radius: 200px;
+  padding: 10px;
+  opacity: .9;
+}
+
+.title {
+  background-color: antiquewhite;
+  padding: 10;
+}
+
+.title h2 {
+  color: #ac2a2a;
+  font-size: medium;
+}
