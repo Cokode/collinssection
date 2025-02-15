@@ -7,7 +7,7 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  grid-template-columns: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
@@ -28,10 +28,15 @@
 }
 
 .main {
+  /*
+   margin-top: 30em;  */
+  background-color: #ac2a2a; 
+
+
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
+  grid-column-start: 2; /* to ajust to 2 later */
 }
 
 .main ol {
@@ -93,9 +98,9 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
+  grid-column-start: 2;
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .footer a {
@@ -171,10 +176,10 @@ a.secondary {
 /* begings here */
 
 .secWrapper {
-  display: block;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  /* background-color: #ccc; */
+  align-items: center;
   padding: 20px;
 }
 
@@ -189,11 +194,7 @@ a.secondary {
   width: "100%";
   background-color: #193754;
   height: "auto";
-  display:flex;
-  flex-wrap: wrap;
-  /* padding: 5em; */
-  border-width: 5px;
- border-radius: 2em;
+  border-radius: 2em;
 }
 
 .Image {

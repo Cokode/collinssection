@@ -4,7 +4,6 @@ import styles from "../page.module.css";
 
 export default function MyHome() {
 
-
   return (
     <div className={styles.secWrapper}> 
       <section >
@@ -22,7 +21,6 @@ export default function MyHome() {
           alt="Picture of me"
           hidden ={false} // remove the image on mobile screens
         />
-
     </section>
     </div>
   );
