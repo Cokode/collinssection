@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 import React, {useState} from "react";
-import styles from "../navStyle.module.css"
+import styles from "../navStyle.module.css";
 import PdfFrame from "@/app/@components/pdfFrame";
 
 export default function Something() {
