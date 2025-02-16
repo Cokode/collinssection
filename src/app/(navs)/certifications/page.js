@@ -9,6 +9,7 @@ export default function CertificatePage() {
         title={"Ciscos Networking Basics Certificate"}
         src={"./pdf/networking_basics.pdf"}
         desc={"Click to download"}
+        frameStyle={styles.iframe}
       />
     </div>
   );

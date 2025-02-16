@@ -1,6 +1,5 @@
-import styles from "../(navs)/navStyle.module.css";
 
-export default function PdfFrame({title, src, desc}) {
+export default function PdfFrame({title, src, desc, frameStyle}) {
   
   return (
     <>
@@ -9,7 +8,7 @@ export default function PdfFrame({title, src, desc}) {
         allowFullScreen
         loading="lazy"
         src={src}
-        className={styles.iframe}
+        className={frameStyle}
       />
       <a target="_blank" href="" download={"./pdf/networking_basics.pdf"} >{desc}</a>
     </>
