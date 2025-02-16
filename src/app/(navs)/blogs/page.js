@@ -5,15 +5,21 @@ export default function BlogPage() {
   
   return (
     <div className={styles.main}>
-     <PdfFrame 
-      title={"Ciscos Networking Basics Certificate"}
-      src={"/pdf/networking_basics.pdf"}
-      desc={"Click to download"}
-      frameStyle={styles.iframe}
-    /> 
+    <iframe
+      title= "Ciscos Networking Basics Certificate"
+      allowFullScreen
+      loading="lazy"
+      src={`/pdf/networking_basics.pdf`}  // <-- Correct path
+      className={styles.iframe}
+    />
+    <a target="_blank" href="/pdf/networking_basics.pdf" download="networking_basics.pdf">
+      download the file
+    </a>
     </div>
   );
 }
+
+
 
 
 
