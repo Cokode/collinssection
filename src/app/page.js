@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import MyHome from "./@components/myHome";
-import Footer from "./@components/footer";
+import MyHome from "./components/myHome";
+import Footer from "./components/footer";
 
 export default function HomePage() {
   

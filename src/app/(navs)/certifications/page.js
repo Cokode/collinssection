@@ -1,5 +1,5 @@
 import styles from "../navStyle.module.css";
-import PdfFrame from "@/app/@components/pdfFrame";
+import PdfFrame from "@/app/components/pdfFrame";
 
 export default function CertificatePage() {
   
