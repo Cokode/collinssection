@@ -9,7 +9,7 @@ export default function BlogPage() {
       title= "Ciscos Networking Basics Certificate"
       allowFullScreen
       loading="lazy"
-      src={`/pdf/networking_basics.pdf`}  // <-- Correct path
+      src="/pdf/networking_basics.pdf"  // <-- Correct path
       className={styles.iframe}
     />
     <a target="_blank" href="/pdf/networking_basics.pdf" download="networking_basics.pdf">
