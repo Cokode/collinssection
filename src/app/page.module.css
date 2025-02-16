@@ -7,7 +7,7 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
@@ -28,15 +28,15 @@
 }
 
 .main {
-  /*
-   margin-top: 30em;  */
+  
+   /* margin-top: 30em;   */
   background-color: #ac2a2a; 
 
-
+  justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  grid-column-start: 2; /* to ajust to 2 later */
+  grid-row-start: 2; /* to ajust to 2 later */
 }
 
 .main ol {
@@ -98,9 +98,9 @@ a.secondary {
 }
 
 .footer {
-  grid-column-start: 2;
+  grid-row-start: 3;
   display: flex;
-  /* gap: 24px; */
+  gap: 24px;
 }
 
 .footer a {

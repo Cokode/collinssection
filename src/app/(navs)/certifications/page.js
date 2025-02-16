@@ -1,10 +1,7 @@
-"use client";
-
-import React, {useState} from "react";
 import styles from "../navStyle.module.css";
 import PdfFrame from "@/app/@components/pdfFrame";
 
-export default function Something() {
+export default function Home() {
   
   return (
     <div className={styles.main}>
