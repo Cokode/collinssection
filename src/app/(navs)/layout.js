@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function PageLayout({ children }) {
+export default function NavLayout({ children }) {
   return (
     <div className={styles.page}>
       {children}

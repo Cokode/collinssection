@@ -1,7 +1,7 @@
 import styles from "../navStyle.module.css";
 import PdfFrame from "@/app/@components/pdfFrame";
 
-export default function Home() {
+export default function CertificatePage() {
   
   return (
     <div className={styles.main}>

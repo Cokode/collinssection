@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import MyHome from "./@components/myHome";
 import Footer from "./@components/footer";
 
-export default function LandingPage() {
+export default function HomePage() {
   
   return (
     <div className={styles.page}>
