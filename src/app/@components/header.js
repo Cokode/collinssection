@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <nav className={`${geistSans.className} antialiased`}>
         <Link href="/">Home</Link>
-        <Link href="/certifications/">Certifications</Link>
+        <Link href="/certifications">Certifications</Link>
         <Link href="#">Projects</Link>
         <Link href="/blogs">Blogs</Link>
         <Link href="#">Contact</Link>
