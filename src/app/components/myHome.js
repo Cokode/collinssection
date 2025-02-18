@@ -19,7 +19,7 @@ export default function MyHome() {
           blurDataURL="data:..."
           className={styles.Image}
           alt="Picture of me"
-          hidden ={false} // remove the image on mobile screens
+          hidden={false} // remove the image on mobile screens
         />
     </section>
     </div>

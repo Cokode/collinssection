@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PdfFrame({title, desc, frameStyle}) {
+export default function PdfFrame({title, desc, src, frameStyle}) {
   
   return (
     <>
@@ -8,10 +8,12 @@ export default function PdfFrame({title, desc, frameStyle}) {
         title={title}
         allowFullScreen
         loading="lazy"
-        src="/pdf/Networking_Basics.pdf"
+        src={src}
         className={frameStyle}
+        height={"auto"}
+        width={"auto"}
       />
-      <a target="_blank" href="/pdf/Networking_Basics.pdf" download={"/pdf/Networking_Basics.pdf"} >{desc}</a>
+      <a target="_blank" href={src} download={src} >{desc}</a>
     </>
   );
 }

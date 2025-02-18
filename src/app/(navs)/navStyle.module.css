@@ -2,18 +2,20 @@
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+  --font-hover-color: #d3a50e;
 
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  grid-template-rows: 80px 1fr;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 50px;
-  /* gap: 64px; */
+  gap: 20px;
   font-family: var(--font-geist-sans);
+
+  padding-top: 3em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,18 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
+
+  .certButton:hover {
+    color: var(--button-secondary-hover);
+  }
+
+  .certWrapper:hover {
+    opacity: 0.6;
+  }
+
+  .certButton {
+    color: #ccc;
+  }
 }
 
 .main {
@@ -32,9 +46,14 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-  gap: 32px;
+  /* gap: 62px; */
   width: 100%;
+  height: 100%;
   grid-row-start: 2;
+
+  margin-top: 2em;
+  padding: 60px;
+  background-color: rgba(var(--gray-rgb), 0.08);
 }
 
 .iframe {
@@ -45,9 +64,55 @@
 }
 
 .main a {
-  color: aquamarine;
+  color: var(--font-hover-color);
+  font-weight: 700;
 }
 
 .main a:hover {
-  color:aqua;
+  color:blue;
+  text-decoration: underline;
+}
+
+.certContainer {
+  display: flex;
+  gap: 16px;
+  margin-top: 0.2em;
+  background-color: rgba(var(--gray-rgb), 0.05);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 1;
+  padding: 5px;
+}
+
+.certWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px;
+}
+
+.certButton {
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  border: 1px solid transparent;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.certWrapper:hover {
+  border-radius: 128px;
+  border-color: var(--font-hover-color);
+  border-width: 5px;
+  background-color: var(--font-hover-color);
+  opacity: 0.9;
 }

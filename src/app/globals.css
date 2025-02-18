@@ -44,8 +44,6 @@ a {
 
 
 /* START FROM HERE */
-
-
 nav {
  position: fixed;
  top: 0;
@@ -62,12 +60,12 @@ nav {
  opacity: 0.7;
 }
 
-nav a {
+/* nav a {
  color: white;
  text-decoration: none;
  font-size: 16px;
  transition: color 0.3s;
-}
+} */
 
 nav a:hover {
  color: #d3a50e;
