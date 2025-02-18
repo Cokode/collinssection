@@ -6,9 +6,9 @@ import CertMenu from "@/app/components/certMenu";
 export default function CertificatePage() {
 
   const press = (value) => {
-    console.info(value)
+    console.info(value);
   }
-
+  
   return (
     <>
       <div className={styles.certContainer}>

@@ -28,7 +28,7 @@ const CertData = [
     desc: "Certificate of Completion",
     skills: []
   }
-]
+];
 
 
 export {CertData};
