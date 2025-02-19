@@ -1,0 +1,3 @@
+const statement = "The path to success is paved with dedication and persistence. It is through unwavering commitment and the relentless pursuit of our goals that we transform challenges into opportunities and obstacles into stepping stones. Remember, true results are born not from sporadic efforts but from the consistent application of hard work and the resilience to keep moving forward, even when the going gets tough.";
+
+export {statement};
