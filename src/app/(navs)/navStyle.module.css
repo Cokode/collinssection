@@ -51,8 +51,8 @@
   height: 100%;
   grid-row-start: 2;
 
-  margin-top: 2em;
-  padding: 60px;
+  margin-top: 0em;
+  padding: 20px  60px;
   background-color: rgba(var(--gray-rgb), 0.08);
 }
 
@@ -115,4 +115,26 @@
   border-width: 5px;
   background-color: var(--font-hover-color);
   opacity: 0.9;
+}
+
+.details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 1em 1em 1em;
+  /* background-color: #383838; */
+}
+
+.summary {
+  font-weight: bold;
+  /* margin: -0.5em -0.5em 0; */
+  padding: 0.5em;
+}
+
+.details[open] {
+  padding: 0.5em;
+}
+
+.details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }

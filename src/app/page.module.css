@@ -117,6 +117,12 @@ a.secondary {
   /* background-color: #ac2a2a; */
 }
 
+.cite {
+  padding: 17 10 7 0px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .name {
   font-size: 30px;
   justify-self: center;
@@ -148,3 +154,21 @@ a.secondary {
   color: #ac2a2a;
   font-size: medium;
 }
+
+.iconWrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  gap: 10px;
+  background-color: #e0e0e0;
+  border-radius: 39px;
+}
+
+.icons {
+ height: 25px;
+ width: 25px;
+}
+
+.iconWrapper:hover {
+  border-radius: 20px;
+ }

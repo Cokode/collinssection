@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../page.module.css";
+import deskt from "../.../../../../public/png/desktop_cloud_stack.png";
+import host from "../.../../../../public/png/host.png";
+import netMan from "../.../../../../public/png/network_manage.png";
+
 
 export default function MyHome() {
 
@@ -22,6 +26,12 @@ export default function MyHome() {
           hidden={false} // remove the image on mobile screens
         />
     </section>
+    <cite className={styles.cite}>Junior IT Support Specialist</cite>
+    <div className={styles.iconWrapper} >
+      <Image className={styles.icons} alt="WiFi icon" src={netMan}  />
+      <Image className={styles.icons} alt="WiFi icon" src={host}  />
+      <Image className={styles.icons} alt="WiFi icon" src={deskt}  />
+    </div>
     </div>
   );
 }
