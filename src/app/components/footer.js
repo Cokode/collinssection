@@ -17,7 +17,7 @@ export default function Footer () {
           width={16}
           height={16}
         />
-        Welcome to my portfolio! This web page is under construction, soon you can explore some of my certifications, projects, and blogs.
+        Welcome to my portfolio! This web page is under construction, soon you can explore my certifications, projects, and blogs.
       </a>
     </footer>
   );
