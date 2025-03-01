@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import styles from "../page.module.css";
 import deskt from "../.../../../../public/png/desktop_cloud_stack.png";
@@ -8,10 +9,21 @@ import netMan from "../.../../../../public/png/network_manage.png";
 
 export default function MyHome() {
 
+   const [isDesktop, setIsDesktop] = useState(false);
+  
+    useEffect(() => {
+      const checkScreenSize = () => {
+        setIsDesktop(window.innerWidth >= 1224);
+      };
+      checkScreenSize(); // Initial check
+      window.addEventListener("resize", checkScreenSize);
+      return () => window.removeEventListener("resize", checkScreenSize);
+    }, []);
+
   return (
     <div className={styles.secWrapper}> 
       <section >
-        <h3 className={styles.name}>Collins Chinedu Amalimeh</h3>
+        <h3 className={styles.name}>{ isDesktop ? "Collins Chinedu Amalimeh" : "Collins Amalimeh"}</h3>
       </section>
       
       <section className={styles.section}>
