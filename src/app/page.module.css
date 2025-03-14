@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   grid-row-start: 2; /* to ajust to 2 later */
+  /* background-color: #ac2a2a; */
 }
 
 a.primary {
@@ -86,9 +87,9 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 0px 32px ;
+    /* padding: 0px 32px ; */
     padding-bottom: 80px;
-    grid-template-rows: 0px 1fr 20px;
+    grid-template-rows: 0px 1fr 10px;
   }
 
   .main {
@@ -97,8 +98,14 @@ a.secondary {
   
   .footer {
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+  }
+
+  .footerIcon {
+    align-self: center;
   }
 }
 
@@ -116,9 +123,7 @@ a.secondary {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-
-  /* background-color: #ac2a2a; */
+  padding: 10px; 
 }
 
 .cite {

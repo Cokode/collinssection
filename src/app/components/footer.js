@@ -6,11 +6,13 @@ export default function Footer () {
   return (
     <footer className={styles.footer}>
       <a
-        href="#"
-        target="_blank"
-        // rel="noopener noreferrer"
+        // href="#"
+        // // target="_blank"
+        // // rel="noopener noreferrer"
+        
       >
         <Image
+          style={styles.footerIcon}
           aria-hidden
           src="/globe.svg"
           alt="Globe icon"
