@@ -136,15 +136,15 @@ a.secondary {
 
 .section {
   margin-top: 2em;
-  width: "100%";
+  /* width: "100%"; */
   background-color: var(--image-background-color);
   height: "auto";
   border-radius: 2em;
 }
 
 .Image {
-  border-radius: 200px;
-  padding: 10px;
+  border-radius: 500px;
+  padding: 15px;
 }
 
 
@@ -175,4 +175,5 @@ a.secondary {
 
 .iconWrapper:hover {
   border-radius: 20px;
+  background-color: var(--image-background-color);
  }

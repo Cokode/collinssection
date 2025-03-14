@@ -28,9 +28,10 @@ export default function MyHome() {
       
       <section className={styles.section}>
         <Image 
-          src="/img/IMG_5928.jpg"
-          width={290}
-          height={270}
+          src="/img/6D9896BB-FDE5-491F-A61F-74DCB630C2BB.jpg"
+          // width={290}
+          width={340}
+          height={250}
           placeholder="blur"
           blurDataURL="data:..."
           className={styles.Image}
@@ -38,7 +39,7 @@ export default function MyHome() {
           hidden={false} // remove the image on mobile screens
         />
     </section>
-    <cite className={styles.cite}>Junior IT Support Specialist</cite>
+    <cite className={styles.cite}>IT Specialist</cite>
     <div className={styles.iconWrapper} >
       <Image className={styles.icons} alt="WiFi icon" src={netMan}  />
       <Image className={styles.icons} alt="WiFi icon" src={host}  />
